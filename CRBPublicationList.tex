@@ -37,8 +37,8 @@
 %	PUBLICATIONS PREAMBLE
 %----------------------------------------------------------------------------------------
 
-% zzy: duplicate document class
-% \documentclass[10pt,a4paper]{article}
+
+\documentclass[10pt,a4paper]{article}
 
 %COMPILING: IMPORTANT INFORMATION
 % You'll need to generate a .bbl file from
@@ -53,8 +53,7 @@
 % use your favourite citation style here
 \usepackage{apacite}
 
-% zzy: duplication
-% \usepackage[left=2.5cm,right=2.5cm,top=1.5cm,bottom=2.5cm]{geometry}
+\usepackage[left=2.5cm,right=2.5cm,top=1.5cm,bottom=2.5cm]{geometry}
 
 
 % as bibentry and hyperref clash in some cases, this is a workaround
@@ -81,85 +80,25 @@
 % bibliography
 
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-
-{\bf Ph.D. Environmental and Resource Economics, Yale University}  \hfill { 2015}  \\
-{\bf M.E.Sc. Environmental Economics and Policy (concentration), Yale F\&ES}  \hfill {2009} \\
-{\bf B.A. Psychology, Summa Cum Laude, University of California, Davis}  \hfill {2004} \\
-
-\end{rSection}
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Academic Appointments}
-{\bf Assistant Professor}  \hfill { 2015-}  \\
-{Department of Agricultural and Consumer Economics} \\
-{University of Illinois, Urbana-Champaign} \\
-{\bf Core Faculty Member}  \hfill { 2016-} \\
-{National Center for Supercomputing Applications} \\
-{University of Illinois, Urbana-Champaign}\\
-\end{rSection}
 %%-------------------------------------------------------------------------
-\begin{rSection}{Publications}
+\begin{rSection}{Publication List}
 \MarginText{\nobibliography{publications.bib}}
+\publication{christensen2018sorting}
+\publication{albouyunlocking}
+\publication{christensensuburbs}
+\publication{flintwater}
+\publication{christensenwedge}
 \publication{gillingham2018forthcoming}
 \publication{christensen2018uncertainty}
 \publication{christensen2016geographic}
 \publication{mendelsohn2010ricardian}
+\MarginText{\nobibliography{publications.bib}}
+
 \end{rSection}
 
-\begin{rSection}{Working Papers and Papers in Review}	
-%%%
-\publication{christensen2018sorting}
-%(\href{https://arxiv.org/abs/1706.06969}{NBER Working Paper No. 24826}, \href{https://arxiv.org/pdf/1706.06969.pdf}{pdf}, \href{https://github.com/rgeirhos/object-recognition}{data and materials})\\
-%%%
-\publication{albouyunlocking}
-\publication{christensensuburbs}
-%%%
-\end{rSection}
-
-%%------------------------------------------------------------------------
-
-\begin{rSection}{Work in Progress}
-%%%
-\publication{flintwater}
-\publication{welfarediscrimination}
-\publication{christensenspeedlimits}
-%%%
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Technical Strengths}
-
-%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-%Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML %\\
-%Protocols \& APIs & XML, JSON, SOAP, REST \\
-%Databases & MySQL, PostgreSQL, Microsoft SQL \\
-%Tools & SVN, Vim, Emacs
-%\end{tabular}
-
-%\end{rSection}
 
 
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
 
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \bibliographystyle{apalike}
 \end{document}

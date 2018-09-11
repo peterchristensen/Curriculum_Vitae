@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\reversemarginpar
+\newcommand{\MarginText}[1]{\leavevmode\marginpar{\raggedleft#1}\ignorespaces}
+\usepackage{enumitem}
+
+\name{Peter Christensen} % Your name
+\address{431 Mumford Hall \\ 1301 W. Gregory Dr.} % Your address
+\address{University of Illinois, Urbana-Champaign} % Your secondary addess (optional)
+\address{\bf Office: 217-300-3054 \\ Email: pchrist@illinois.edu} % Your phone number and email
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS PREAMBLE
+%----------------------------------------------------------------------------------------
+
+% zzy: duplicate document class
+% \documentclass[10pt,a4paper]{article}
+
+%COMPILING: IMPORTANT INFORMATION
+% You'll need to generate a .bbl file from
+% the .bib file first, otherwise the publications
+% will not show up in the cv.
+
+% in TeXstudio, this means
+% 1. F1 or F6 for usual compiling (generate .aux)
+% 1. F8 for bibliography compiling (generate .bbl)
+% 2. F1 or F6 for usual compiling once more(generate .pdf)
+
+% use your favourite citation style here
+\usepackage{apacite}
+
+% zzy: duplication
+% \usepackage[left=2.5cm,right=2.5cm,top=1.5cm,bottom=2.5cm]{geometry}
+
+
+% as bibentry and hyperref clash in some cases, this is a workaround
+% as suggested by the following two links:
+%https://tex.stackexchange.com/questions/227933/using-bibentry-to-cite-in-text-reference-with-apacite
+% and
+%https://tex.stackexchange.com/questions/65348/clash-between-bibentry-and-hyperref-with-bibstyle-elsart-harv/65401#65401
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[colorlinks=true]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+
+% hanging publications: 1st line starts at beginning of line, 
+% further lines are placed a bit to the right
+\usepackage{hanging}
+\newcommand\publication[1]{%
+	\smallskip\par\hangpara{1.5em}{1}\bibentry{#1}\smallskip
+}
+
+%-----------------------------------------------------------------------
+
+\begin{document}
+% bibliography
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+
+{\bf Ph.D. Environmental and Resource Economics, Yale University}  \hfill { 2015}  \\
+{\bf M.E.Sc. Environmental Economics and Policy (concentration), Yale F\&ES}  \hfill {2009} \\
+{\bf B.A. Psychology, Summa Cum Laude, University of California, Davis}  \hfill {2004} \\
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Academic Appointments}
+{\bf Assistant Professor}  \hfill { 2015-}  \\
+{Department of Agricultural and Consumer Economics} \\
+{University of Illinois, Urbana-Champaign} \\
+{\bf Core Faculty Member}  \hfill { 2016-} \\
+{National Center for Supercomputing Applications} \\
+{University of Illinois, Urbana-Champaign}\\
+\end{rSection}
+%%-------------------------------------------------------------------------
+\begin{rSection}{Publications}
+\MarginText{\nobibliography{publications.bib}}
+\publication{gillingham2018forthcoming}
+\publication{christensen2018uncertainty}
+\publication{christensen2016geographic}
+\publication{mendelsohn2010ricardian}
+\end{rSection}
+
+\begin{rSection}{Working Papers and Papers in Review}	
+%%%
+\publication{christensen2018sorting}
+%(\href{https://arxiv.org/abs/1706.06969}{NBER Working Paper No. 24826}, \href{https://arxiv.org/pdf/1706.06969.pdf}{pdf}, \href{https://github.com/rgeirhos/object-recognition}{data and materials})\\
+%%%
+\publication{albouyunlocking}
+\publication{christensensuburbs}
+%%%
+\end{rSection}
+
+%%------------------------------------------------------------------------
+
+\begin{rSection}{Work in Progress}
+%%%
+\publication{flintwater}
+\publication{welfarediscrimination}
+\publication{christensenspeedlimits}
+%%%
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	GRANTS AND FUNDING
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{GRANTS AND FUNDING}
+{\bf Total Funding Support \hfill {\bf \$619,580 -- 2015-2018}}\\
+
+{\bf National Center for Supercomputing Applications} \hfill {\bf \$188,000 -- 2016-2020} \\
+{University of Illinois, Urbana-Champaign}\\
+{\bf Uber Technologies (collaborative field experiment)}  \hfill {\bf \$60,000 -- 2018-2019}  \\
+Experimental Evidence on the Effect of Mobility-on-Demand Services in \\ Developing Country Cities \\
+{\bf ACES Seed Grant (Office of International Programs)}  \hfill {\bf \$4,000 -- 2018-2019}  \\
+Experimental Evidence on the Effect of Mobility-on-Demand Services in \\ Developing Country Cities \\
+{\bf Lemann Institute (Office of International Programs)}  \hfill {\bf \$6,780 -- 2017-2018}  \\
+Measuring the Welfare Impacts of Traffic Congestion in Sao Paulo with \\ Google Transit Data  \\
+{\bf Alfred P. Sloan Foundation}  \hfill {\bf \$349,000 -- 2016-2018}  \\
+Understanding the Energy Efficiency Investment Gap \\
+{\bf Campus Research Board Award (UIUC)}  \hfill {\bf \$11,800 -- 2016-2017} \\
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	INVITED TALKS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{INVITED PRESENTATIONS}
+\bf{2019- ASSA} \\
+\\
+\bf{2018- WCERE Congress (Gothenburg), Urban Economics Association (Columbia), USC} \\
+\\
+\bf 2017  University of Sao Paulo, Midwest Energy Fest (UChicago), Zillow (Economics), Microsoft Research   \\
+\\
+\bf 2016 University of Chicago (EPIC), UPenn, AERE Summer Workshop, ETH Zurich (EAERE
+Meeting), World Bank (Global Trade and Policy), Stanford Energy Modeling Forum, Iowa State,
+National Center for Supercomputing Applications  \\
+\\
+\bf 2015-before Stanford Energy Modeling Forum, Michigan, UIUC, Georgetown, UC Davis,
+UPenn, NYU, AERE Summer Workshop, Lincoln Land Institute, Yale Environmental Economics Seminar, Columbia
+(SIPA), Northeast Energy Policy and Environmental Economics \\
+
+\end{rSection}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Technical Strengths}
+
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML %\\
+%Protocols \& APIs & XML, JSON, SOAP, REST \\
+%Databases & MySQL, PostgreSQL, Microsoft SQL \\
+%Tools & SVN, Vim, Emacs
+%\end{tabular}
+
+%\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{apalike}
+\end{document}
