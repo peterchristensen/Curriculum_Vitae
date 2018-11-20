@@ -22,6 +22,12 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+            
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \reversemarginpar
@@ -29,8 +35,8 @@
 \usepackage{enumitem}
 
 \name{Peter Christensen} % Your name
-\address{431 Mumford Hall \\ 1301 W. Gregory Dr.} % Your address
-\address{University of Illinois, Urbana-Champaign} % Your secondary addess (optional)
+\address{Website: \href{https://www.uiuc-bdeep.org/christensen}{https://www.uiuc-bdeep.org/christensen}} % Your address
+\address{1301 W. Gregory Dr., University of Illinois, Urbana-Champaign} % Your secondary addess (optional)
 \address{\bf Office: 217-300-3054 \\ Email: pchrist@illinois.edu} % Your phone number and email
 
 %----------------------------------------------------------------------------------------
@@ -103,6 +109,18 @@
 {\bf Core Faculty Member}  \hfill { 2016-} \\
 {National Center for Supercomputing Applications} \\
 {University of Illinois, Urbana-Champaign}\\
+{\bf Visiting Assistant Professor (upcoming spring semester)}  \hfill {2019} \\
+{Department of Economics, Duke University} 
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	OTHER AFFILIATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Academic and Other Affiliations}
+{\bf Principal Investigator}, Big Data for Environmental Economics and Policy (BDEEP)   \\
+{\bf Steering Committee}, Illinois Data Science Initiative (iDSI)   \\
+{\bf Faculty Affiliate}, Cline Center for Advanced Social Research   \\
+{\bf Faculty Affiliate}, National Center for Supercomputing Applications Industry Program   \\
+{\bf Academic Partner}: Uber Research, Zillow Research, AirDNA, Google Earth Engine   \\
 \end{rSection}
 %%-------------------------------------------------------------------------
 \begin{rSection}{Publications}
@@ -118,8 +136,10 @@
 \publication{christensen2018sorting}
 %(\href{https://arxiv.org/abs/1706.06969}{NBER Working Paper No. 24826}, \href{https://arxiv.org/pdf/1706.06969.pdf}{pdf}, \href{https://github.com/rgeirhos/object-recognition}{data and materials})\\
 %%%
-\publication{albouyunlocking}
+\publication{albouyunlockingnber}
 \publication{christensensuburbs}
+\publication{flintwater}
+\publication{christensenspeedlimits}
 %%%
 \end{rSection}
 
@@ -127,9 +147,12 @@
 
 \begin{rSection}{Work in Progress}
 %%%
-\publication{flintwater}
 \publication{welfarediscrimination}
-\publication{christensenspeedlimits}
+\publication{toxicdiscrimination}
+\publication{christensenosman}
+\publication{christensencontractor}
+\publication{bentofloods}
+\publication{christensenwedge}
 %%%
 \end{rSection}
 
@@ -139,15 +162,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{GRANTS AND FUNDING}
-{\bf Total Funding Support \hfill {\bf \$619,580 -- 2015-2018}}\\
+{\bf Total Funding Support \hfill {\bf \$827,668 -- 2015-2018}}\\
 
+{\bf Russell Sage Foundation} \hfill {\bf \$148,088 -- 2018-2020} \\
+Welfare Impacts of Housing Discrimination on Location Choice \\
 {\bf National Center for Supercomputing Applications} \hfill {\bf \$188,000 -- 2016-2020} \\
 {University of Illinois, Urbana-Champaign}\\
 {\bf Uber Technologies (collaborative field experiment)}  \hfill {\bf \$60,000 -- 2018-2019}  \\
 Experimental Evidence on the Effect of Mobility-on-Demand Services in \\ Developing Country Cities \\
 {\bf ACES Seed Grant (Office of International Programs)}  \hfill {\bf \$4,000 -- 2018-2019}  \\
 Experimental Evidence on the Effect of Mobility-on-Demand Services in \\ Developing Country Cities \\
-{\bf Lemann Institute (Office of International Programs)}  \hfill {\bf \$6,780 -- 2017-2018}  \\
+{\bf Lemann Institute}  \hfill {\bf \$6,780 -- 2017-2018}  \\
 Measuring the Welfare Impacts of Traffic Congestion in Sao Paulo with \\ Google Transit Data  \\
 {\bf Alfred P. Sloan Foundation}  \hfill {\bf \$349,000 -- 2016-2018}  \\
 Understanding the Energy Efficiency Investment Gap \\
@@ -160,17 +185,12 @@ Understanding the Energy Efficiency Investment Gap \\
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{INVITED PRESENTATIONS}
-\bf{2019- ASSA} \\
-\\
-\bf{2018- WCERE Congress (Gothenburg), Urban Economics Association (Columbia), USC} \\
-\\
-\bf 2017  University of Sao Paulo, Midwest Energy Fest (UChicago), Zillow (Economics), Microsoft Research   \\
-\\
-\bf 2016 University of Chicago (EPIC), UPenn, AERE Summer Workshop, ETH Zurich (EAERE
-Meeting), World Bank (Global Trade and Policy), Stanford Energy Modeling Forum, Iowa State,
+\bf{\underline{2019-} ASSA meetings (Atlanta), USC, Workshop in Environmental Economics and Data Science (Portland)} \\
+
+\bf{\underline{2015-2018}} Urban Economics Association (Columbia), WCERE Congress (Gothenburg), University of Sao Paulo, Midwest Energy Fest (UChicago), Zillow (Economics), Microsoft Research, University of Chicago (EPIC), University of Pennsylvania, AERE Summer Workshop, FEEM, ETH Zurich (EAERE Meeting), World Bank (Global Trade and Policy), Stanford Energy Modeling Forum, Iowa State,
 National Center for Supercomputing Applications  \\
-\\
-\bf 2015-before Stanford Energy Modeling Forum, Michigan, UIUC, Georgetown, UC Davis,
+
+\bf{\underline{Pre-2015}} Stanford Energy Modeling Forum, University of Michigan, UIUC, Georgetown, UC Davis,
 UPenn, NYU, AERE Summer Workshop, Lincoln Land Institute, Yale Environmental Economics Seminar, Columbia
 (SIPA), Northeast Energy Policy and Environmental Economics \\
 
